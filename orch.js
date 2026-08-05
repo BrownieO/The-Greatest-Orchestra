@@ -13,7 +13,7 @@ player.addEventListener('load', () => {
   console.log('READY');
 	imagines.forEach(img => {
 	  img.style.display = 'none';
-	};
+    });
 });
 
 player.addEventListener('start', () => {
