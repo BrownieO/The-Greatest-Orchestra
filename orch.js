@@ -4,12 +4,9 @@ const container = document.querySelector('#orch');
 const imagines = container.querySelectorAll('img');
 
 midiFile.addEventListener('input', () => {
-    if (midiFile.value.trim() !== "") {
-		var fileUrl = URL.createObjectURL(midiFile.value);
-		fetch(fileUrl)
-        .then(response => response.text())
-        .then(data => player.src = data);
-    }
+    var file = midiFile.files[0];
+    if (!file) return;
+    player.src = URL.createObjectURL(file);
 });
 
 player.addEventListener('load', () => {
