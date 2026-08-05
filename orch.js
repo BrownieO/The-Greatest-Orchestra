@@ -5,7 +5,10 @@ const imagines = container.querySelectorAll('img');
 
 midiFile.addEventListener('input', () => {
     if (midiFile.value.trim() !== "") {
-        player.src = midiFile.value;
+		var fileUrl = URL.createObjectURL(midiFile.value);
+		fetch(fileUrl)
+        .then(response => response.text())
+        .then(data => player.src = data);
     }
 });
 
