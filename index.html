@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>The Greatest Orchestra</title>
+		<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+	</head>
+<body>
+
+<header>
+
+<midi-player
+  src="Brodyquest.mid"
+  sound-font>
+</midi-player>
+<p>
+<label for="midiFile" style="display: none">Load MIDI file:</label>
+<input type="file" id="midiFile" name="midiFile" accept="audio/midi, audio/x-midi" style="display: none"/>
+</p>
+<div id="orch">
+<br>
+<!-- Percussion -->
+<img src="battery.png" id="battery" style="display: none; bottom: 0px; position: relative;">
+<img src="119.png" id="118" style="display: none; bottom: 0px; position: relative;">
+<img src="15.png" id="14" style="display: none; bottom: 0px; position: relative;">
+<img src="12.png" id="11" style="display: none; bottom: 0px; position: relative;">
+
+<!-- Keyboard -->
+<img src="4.png" id="3" style="display: none; bottom: 0px; position: relative;">
+<img src="39.png" id="38" style="display: none; bottom: 0px; position: relative;">
+<img src="91.png" id="90" style="display: none; bottom: 0px; position: relative;">
+<img src="82.png" id="81" style="display: none; bottom: 0px; position: relative;">
+
+<!-- Brass -->
+<img src="62.png" id="61" style="display: none; bottom: 0px; position: relative;">
+
+<!-- Bass -->
+<img src="36.png" id="35" style="display: none; bottom: 0px; position: relative;">
+
+<!-- Soloists -->
+<img src="31.png" id="30" style="display: none; bottom: 0px; position: relative;">
+<img src="104.png" id="103" style="display: none; bottom: 0px; position: relative;">
+<img src="93.png" id="92" style="display: none; bottom: 0px; position: relative;">
+<img src="54.png" id="53" style="display: none; bottom: 0px; position: relative;">
+<img src="86.png" id="85" style="display: none; bottom: 0px; position: relative;">
+
+<!-- Sound effects -->
+<img src="124.png" id="123" style="display: none; bottom: 0px; position: relative;">
+<img src="125.png" id="124" style="display: none; bottom: 0px; position: relative;">
+<br>
+</div>
+<script src="orch.js"></script>
+</body>
+</html>
